@@ -1,0 +1,7 @@
+Perbedaan th:include dan th:replace adalah th:include akan menyertakan isi fragmen ke dalam tag host-nya sedangkan th: replace akan menggantikan tag host dengan fragmen.
+
+Misal,
+pada kondisi <object th:include="fragments/fragment :: css" th:remove="tag"></object>
+fragment akan ditempatkan di dalam tag <object...>
+Sedangkan pada kondisi 	<title th:replace="fragments/fragment :: headerFragment('Add Car')"></title>
+<title...> akan digantikan oleh konten.
